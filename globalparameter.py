@@ -47,11 +47,16 @@ jobtitle_list = ['software engineer', 'project manager', 'research assistant', '
 jobtitle_path_list = ['software_engineer', 'project_manager', 'research_assistant', 'process_engineer', 'consultant',
                       'account_manager']
 
+cf_recommender_list = ['SVDPlusPlusRecommender', 'ASVDPlusPlusRecommender', 'BiasedMFRecommender', 'BPMFRecommender',
+                       'BPoissMFRecommender', 'LLORMARecommender', 'MFALSRecommender', 'NMFRecommender',
+                       'PMFRecommender', 'RBMRecommender']
+
 raw_data_path = '/Users/pengyuzhou/Google Drive/Linkedin_datafile/LinkedIn_data_lowercase_no_punctuation.csv'
 # extract columns:[3-5,9-11,15-17,21-23,27-29,33-35,39-41]
 # education:[45-65 length5][46-47,49,51-52,54,56-57,59,61-62,64]
 # skill language:[65,66]
-extract_column_list = [3,4,5,9,10,11,15,16,17,21,22,23,27,28,29,33,34,35,39,40,41,46,47,49,51,52,54,56,57,59,61,62,64,65,66]
+extract_column_list = [3, 4, 5, 9, 10, 11, 15, 16, 17, 21, 22, 23, 27, 28, 29, 33, 34, 35, 39, 40, 41, 46, 47, 49, 51,
+                       52, 54, 56, 57, 59, 61, 62, 64, 65, 66]
 
 train_pos_start_loc = 0
 train_neg_start_loc = extract_number
@@ -62,4 +67,4 @@ test_neg_start_loc = extract_number + int((total_number - extract_number) * rati
 test_pos_end_loc = extract_number
 test_neg_end_loc = total_number
 
-collaborative_filtering_path = '/Users/pengyuzhou/Google Drive/Linkedin_datafile/user-item-cf'
+collaborative_filtering_path = '/Users/pengyuzhou/Downloads/user-item-cf'
