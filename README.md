@@ -2,7 +2,7 @@
 
 # Design and Methodology of the Collaborative Filtering Approach
 
-
+![Collaborative Filtering System Design](https://github.com/YuzhouPeng/images/blob/master/Screen%20Shot%202019-02-28%20at%2012.54.20.png)
 The design of collaborative filtering is shown in figure. We will introduce main components in the collaborative filtering approach:
 Data preprocessing: In the data preprocessing part we will discuss what attributes will be suitable for collaborative filtering approaches.
 Forming matrix for learning algorithm: Process of forming user rating matrix will be presented and we will illustrate how we form the rating value for collaborative learning algorithm.
@@ -23,3 +23,4 @@ less than 3 years, the rating value is 1.
 3. If the job title in the work experience is not the given job title, the rating value
 is -1.
 
+![Build matrix of collaborative filtering](https://github.com/YuzhouPeng/images/blob/master/Screen%20Shot%202019-02-28%20at%2013.00.30.png)
